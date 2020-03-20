@@ -8,11 +8,12 @@
 #' @param iniday first day of the year ("dd-mm") to consider for first and last occurrence of frost.
 #' @param endday last day of the year ("dd-mm") to consider for first and last occurrence of frost.
 #' @details Despite the logical threshold of temperature is 0 ºC to determine frost occurrence, the argument "thres" is open to change in case of different units of temperature.
+#' @return If the output path is defined, a pdf file is created.
 #' @examples
-#'
+#'\donttest{
 #' frostFreqs(mn = daily_tmin, dates = seq.Date(as.Date('1981-01-01'),
 #'                              as.Date('2010-12-31'), by ='day'), thres = 0)
-#'
+#'}
 #' @import zoo
 #' @import stats
 #' @importFrom reshape melt
@@ -151,7 +152,7 @@ frostFreqs <- function(mn, dates, thres = 0, out = NULL, iniday = '07-01', endda
     guides(colour=guide_legend(ncol=2))
   
   
-  gt <- overlap_plots(pg, pf)
+  gt <- combine_plots(pg, pf)
   
   if(!is.null(out)){
     pdf(out, height = 6, width = 7, useDingbats = F)

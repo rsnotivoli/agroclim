@@ -6,6 +6,7 @@
 #' @param dates vector of dates corresponding with daily temprature series
 #' @param lati numeric value indicating the latitude of location.
 #' @details Depending on the latitude, the function detects the hemisphere and considers growing season from 1st April to 31st October (northern hemisphere) or from 1st October to 30rd April (southern hemisphere).
+#' @return The sum of degree-days (BEDD) is returned as a numeric value.
 
 #' @references Gladstones, J. (1992) Viticulture and environment (Winetitles: Adelaide).
 #' @examples

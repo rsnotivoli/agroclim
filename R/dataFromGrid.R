@@ -10,17 +10,17 @@
 #'
 #' Arguments lon and lat define the coordinates that must be in the same projection as the gridded dataset. If there is no spatial coincidence, returned object will be empty.
 #'
-#' @return a matrix with same columns as pairs of coordinates defined in lon and lat arguments. If times is TRUE, the matrix will be a zoo object.
+#' @return A matrix with same columns as pairs of coordinates defined in lon and lat arguments. If times is TRUE, the matrix will be a zoo object.
 #'
 #' @examples
 #'
-#'
-#' # dataFromGrid(grid = "../data/tmax.nc",
-#'  #                varname = 'tn',
-#'  #                lon = c(41.39, 42),
-#'  #                lat = c(2.17, 2.5),
-#'  #                times = FALSE)
-#'
+#'\donttest{
+#'  dataFromGrid(grid = "../data/tmax.nc",
+#'                  varname = 'tn',
+#'                  lon = c(41.39, 42),
+#'                  lat = c(2.17, 2.5),
+#'                  times = FALSE)
+#'}
 #' @import ncdf4
 #' @import easyNCDF
 #' @import sp
@@ -55,7 +55,7 @@ dataFromGrid <- function(grid, varname, lon, lat, times = FALSE){
       }
 
       # variable to array
-      print("Retrieving data from NetCDF file")
+      message("Retrieving data from NetCDF file")
       var <- NcToArray(ncfile, vars_to_read = varname)
       var <- drop(var)
 
@@ -104,7 +104,7 @@ dataFromGrid <- function(grid, varname, lon, lat, times = FALSE){
     } else{
       df <- data.frame(lon = lon, lat = lat)
       coordinates(df) <- c("lon", "lat")
-      print("Retrieving data from raster")
+      message("Retrieving data from raster")
       res <- extract(grid, df)
       res <- t(res)
 

@@ -8,6 +8,9 @@
 \describe{
   \item{\code{daily_tmin}}{numeric. daily minimum temperatures}
 }}
+\source{
+Daily data source from the STEAD dataset of mainland Spain temperatures.
+}
 \usage{
 daily_tmin
 }
@@ -16,5 +19,8 @@ Dataset with 30 years of daily minimum temperature.
 }
 \details{
 Daily minimum temperature
+}
+\references{
+<http://dx.doi.org/10.20350/digitalCSIC/8622>
 }
 \keyword{datasets}

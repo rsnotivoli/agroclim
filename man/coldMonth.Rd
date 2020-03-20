@@ -16,7 +16,7 @@ coldMonth(mn, dates, type = "temp", ...)
 \item{...}{any other argument. It is expected to be "na.rm" in case NA values are required to be removed.}
 }
 \value{
-depending on argument type, the output will be a numeric value with the month (type = "month") or with temperature (type = "temp").
+Depending on argument type, the output will be a numeric value with the month (type = "month") or with temperature (type = "temp").
 }
 \description{
 Calculates the mean temperature of the coldest month of the year

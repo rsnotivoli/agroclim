@@ -20,6 +20,9 @@ frostFreqs(mn, dates, thres = 0, out = NULL, iniday = "07-01",
 
 \item{endday}{last day of the year ("dd-mm") to consider for first and last occurrence of frost.}
 }
+\value{
+If the output path is defined, a pdf file is created.
+}
 \description{
 This function calculates the frequency of frost occurrence, by month.
 }
@@ -27,8 +30,8 @@ This function calculates the frequency of frost occurrence, by month.
 Despite the logical threshold of temperature is 0 ºC to determine frost occurrence, the argument "thres" is open to change in case of different units of temperature.
 }
 \examples{
-
+\donttest{
 frostFreqs(mn = daily_tmin, dates = seq.Date(as.Date('1981-01-01'),
                              as.Date('2010-12-31'), by ='day'), thres = 0)
-
+}
 }

@@ -15,6 +15,9 @@ gst(mx, mn, lati, dates)
 
 \item{dates}{vector of dates corresponding with daily temprature series}
 }
+\value{
+A numeric vector with annual values is returned.
+}
 \description{
 Growing Season Temperature (GST). Mean daily temperature in growing season.
 }

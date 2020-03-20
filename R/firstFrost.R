@@ -8,7 +8,7 @@
 #' @param type type of output. It can be "doy" for day of the year (julian day) or "date" for data format ("dd-mm").
 #' @param thres temperature threshold considered to trigger frost occurrence (0 by default).
 #' @details The function is able to span over years. If the argument "enddate" is a date earlier than "inidate", the considered period will cover from "inidate" to the end of the year and from the beginning of the next year to "enddate".
-#' @return depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
+#' @return Depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
 #'
 #' @examples
 #'

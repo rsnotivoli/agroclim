@@ -7,6 +7,7 @@
 #' @param lati (optional) numeric value indicating the latitude of location.
 #' @param iniday initial date in text format ("YYYY-mm-dd"). If "lati" is defined, "iniday" and "endday" are automatically set.
 #' @param endday last date in text format ("YYYY-mm-dd"). If "lati" is defined, "iniday" and "endday" are automatically set.
+#' @return The sum of growing-degree-days is returned as a numeric value.
 #' @details Depending on the latitude, the function detects the hemisphere and considers growing season from 1st April to 31st October (northern hemisphere) or from 1st October to 30rd April (southern hemisphere).
 
 #' @references Winkler AJ, Cook JA, Kliwer WM, Lider LA (1974) General viticulture. University of California Press, Berkeley, CA

@@ -22,6 +22,9 @@ tempDayprob(mx, dates, iniday = "01-01", endday = "09-01",
 
 \item{prob}{numeric. Threshold indicating the probability (0.10 by default)}
 }
+\value{
+A numeric vector with annual values is returned.
+}
 \description{
 Calculates the first day in the year where the probability of temperature over a threshold is higher than a predefined threshold.
 }

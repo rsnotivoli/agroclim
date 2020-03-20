@@ -1,12 +1,13 @@
 #' Number of frost days
 #'
-#' @description Calculates the number of frost day within a predefined period.
+#' @description Calculates the number of frost days within a predefined period.
 #' @param mn vector of daily minimum temperature series.
 #' @param dates vector of dates corresponding with daily temprature series
 #' @param iniday first day of the year ("dd-mm") when frost occurrence will be considered.
 #' @param endday last day of the year ("dd-mm") when frost occurrence will be considered.
 #' @param thres temperature threshold considered to trigger frost occurrence (0 by default).
 #' @details Despite the logical threshold of temperature is 0 ºC to determine frost occurrence, the argument "thres" is open to change in case of different units of temperature.
+#' @return A numeric vector with the annual number of frost days is returned.
 #' @examples
 #'
 #'

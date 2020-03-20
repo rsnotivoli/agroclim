@@ -21,7 +21,7 @@ firstFrost(mn, dates, iniday = "07-01", endday = "06-30",
 \item{thres}{temperature threshold considered to trigger frost occurrence (0 by default).}
 }
 \value{
-depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
+Depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
 }
 \description{
 Calculates the first frost day within a predefined period.

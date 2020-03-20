@@ -15,6 +15,9 @@ bedd(mx, mn, lati, dates)
 
 \item{dates}{vector of dates corresponding with daily temprature series}
 }
+\value{
+The sum of degree-days (BEDD) is returned as a numeric value.
+}
 \description{
 Biologically effective degree-days (BEDD). Gladstones, J. (1992).
 }

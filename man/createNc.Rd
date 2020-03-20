@@ -26,19 +26,24 @@ createNc(arr, varunit, varname, longname, lons, lats, inidate = NULL,
 
 \item{out}{character. path to the output file.}
 }
+\value{
+A NetCDF file is created in the path specified in the "out" parameter.
+}
 \description{
 Creates a NetCDF file from an array with values.
 }
 \examples{
 
-# createNc(arr = hi,
- #         varunit = 'ºC',
- #         varname = 'hi',
- #         longname = 'Huglin Index',
- #         lons = lon,
- #         lats = lat,
- #         inidate = '1980-01-01',
- #         scale = 'years',
- #         out = 'hi.nc')
+\donttest{
+createNc(arr = hi,
+          varunit = 'ºC',
+          varname = 'hi',
+          longname = 'Huglin Index',
+          lons = lon,
+          lats = lat,
+          inidate = '1980-01-01',
+          scale = 'years',
+          out = 'hi.nc')
+ }
 
 }

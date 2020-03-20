@@ -15,6 +15,9 @@ hi(mx, mn, dates, lati)
 
 \item{lati}{numeric value indicating the latitude of location.}
 }
+\value{
+A numeric vector with annual values is returned.
+}
 \description{
 Huglin Heliothermal Index (HI). Useful as a zoning tool (Huglin 1978).
 }

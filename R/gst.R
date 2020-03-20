@@ -5,6 +5,7 @@
 #' @param mn vector of daily minimum temperature series.
 #' @param dates vector of dates corresponding with daily temprature series
 #' @param lati numeric value indicating the latitude of location.
+#' @return A numeric vector with annual values is returned.
 #' @details Depending on the latitude, the function detects the hemisphere and considers growing season from 1st April to 31st October (northern hemisphere) or from 1st October to 30rd April (southern hemisphere).
 
 #' @references Jones G, Duff A, Hall A, Myers J (2010) Spatial Analysis of Climate in Winegrape Growing Regions in the Western United States. Am. J. Enol. Vitic. 61:3.

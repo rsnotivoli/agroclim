@@ -24,6 +24,9 @@ pentadProbs(mx, mn, temp_dates, out = NULL, min_abs = -20,
 
 \item{show_legend}{logical value indicating wether legend will be shown or not.}
 }
+\value{
+If the output path is defined, a pdf file is created.
+}
 \description{
 This function calculates the probability od occurrence of a temperature range in a five-day row (pentad).
 }

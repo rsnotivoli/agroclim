@@ -15,6 +15,9 @@ tempProb(mx, dates, thres = 20, month = NULL)
 
 \item{month}{integer between 1 and 12 indicating the month to compute the probability.}
 }
+\value{
+A numeric vector with annual values is returned.
+}
 \description{
 Calculates the first day in the year where the probability of temperature over a threshold is higher than a predefined threshold.
 }

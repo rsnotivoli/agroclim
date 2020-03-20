@@ -29,6 +29,9 @@ calcGrid(mxnc = NULL, mnnc = NULL, varnametx = NULL,
 
 \item{...}{specific arguments matching the arguments of the target funcion.}
 }
+\value{
+A NetCDF file is created in the path specified in the "out" parameter.
+}
 \description{
 Calculates any of the agroclimatic indices over a multidimensional dataset
 }
@@ -36,12 +39,10 @@ Calculates any of the agroclimatic indices over a multidimensional dataset
 The "inienddays" argument only works if the input daily temperature ncdf file includes the time dimension in the format of "days since YYY-MM-DD". Otherwise, the function will return an error. All the arguments of the target function (function to be applied over the ncdf) must be stated ("...") or an unespecified error will appear. The function uses the argument "ncpu" to split the tasks into different cores taking advantage of the hardware.
 }
 \examples{
-
- # example of running the frost probability indicator over a ncdf file
- # (not run)
- # calcGrid(mxnc = NULL, mnnc = 'tmin.nc', varnametn = 'tn', fun = 'frostProb', 
- #          inienddays = NULL, dates = dates, ncpu = 4,  
- #          out = 'fd_prob.nc', iniday = '07-01', endday = '06-30', 
- #          type = 'doy', thres = 0, prob = 0.10)
-
+\donttest{
+ calcGrid(mxnc = NULL, mnnc = 'tmin.nc', varnametn = 'tn', fun = 'frostProb', 
+          inienddays = NULL, dates = dates, ncpu = 4,  
+          out = 'fd_prob.nc', iniday = '07-01', endday = '06-30', 
+          type = 'doy', thres = 0, prob = 0.10)
+}
 }

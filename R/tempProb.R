@@ -5,7 +5,7 @@
 #' @param dates vector of dates corresponding with daily temprature series
 #' @param thres temperature threshold considered to trigger occurrence.
 #' @param month integer between 1 and 12 indicating the month to compute the probability.
-#'
+#' @return A numeric vector with annual values is returned.
 #' @examples
 #'
 #'   tempProb(mx = daily_tmax,

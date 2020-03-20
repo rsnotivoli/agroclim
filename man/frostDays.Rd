@@ -17,8 +17,11 @@ frostDays(mn, dates, iniday = "07-01", endday = "06-30", thres = 0)
 
 \item{thres}{temperature threshold considered to trigger frost occurrence (0 by default).}
 }
+\value{
+A numeric vector with the annual number of frost days is returned.
+}
 \description{
-Calculates the number of frost day within a predefined period.
+Calculates the number of frost days within a predefined period.
 }
 \details{
 Despite the logical threshold of temperature is 0 ºC to determine frost occurrence, the argument "thres" is open to change in case of different units of temperature.

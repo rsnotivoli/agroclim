@@ -19,6 +19,9 @@ gdd(mx, mn, dates, lati = NULL, iniday, endday)
 
 \item{endday}{last date in text format ("YYYY-mm-dd"). If "lati" is defined, "iniday" and "endday" are automatically set.}
 }
+\value{
+The sum of growing-degree-days is returned as a numeric value.
+}
 \description{
 Growing Degree Day (GDD) or Winkler index. Useful as a zoning tool to differentiate between grape varieties and climate (Winkler et al. 1974).
 }

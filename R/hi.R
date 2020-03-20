@@ -5,6 +5,7 @@
 #' @param mn vector of daily minimum temperature series.
 #' @param dates vector of dates corresponding with daily temprature series
 #' @param lati numeric value indicating the latitude of location.
+#' @return A numeric vector with annual values is returned.
 #' @details Depending on the latitude, the function detects the hemisphere and considers growing season from 1st April to 30rd September (northern hemisphere) or from 1st October to 31st March (southern hemisphere).
 
 #' @references Huglin P. (1978) Nouveau mode d'evaluation des possibilities heliothermiques d'un milieu viticole. CR Acad Agr 64: 1117–1126

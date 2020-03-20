@@ -10,17 +10,20 @@
 #' @param inidate date. initial day of observations.
 #' @param scale character. temporal units for the variable (usually "days", "months" or "years")
 #' @param out character. path to the output file.
+#' @return A NetCDF file is created in the path specified in the "out" parameter.
 #' @examples
 #'
-#' # createNc(arr = hi,
-#'  #         varunit = 'ºC',
-#'  #         varname = 'hi',
-#'  #         longname = 'Huglin Index',
-#'  #         lons = lon,
-#'  #         lats = lat,
-#'  #         inidate = '1980-01-01',
-#'  #         scale = 'years',
-#'  #         out = 'hi.nc')
+#' \donttest{
+#' createNc(arr = hi,
+#'           varunit = 'ºC',
+#'           varname = 'hi',
+#'           longname = 'Huglin Index',
+#'           lons = lon,
+#'           lats = lat,
+#'           inidate = '1980-01-01',
+#'           scale = 'years',
+#'           out = 'hi.nc')
+#'  }
 #'
 #' @export
 

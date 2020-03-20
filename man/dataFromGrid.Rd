@@ -18,7 +18,7 @@ dataFromGrid(grid, varname, lon, lat, times = FALSE)
 \item{times}{logical. If TRUE, time dimension will be extracted from data and the returned values will be in form of a zoo object. Only works for NetCDF and RasterBrick.}
 }
 \value{
-a matrix with same columns as pairs of coordinates defined in lon and lat arguments. If times is TRUE, the matrix will be a zoo object.
+A matrix with same columns as pairs of coordinates defined in lon and lat arguments. If times is TRUE, the matrix will be a zoo object.
 }
 \description{
 This function extracts data from a gridded dataset based on given coordinates.
@@ -30,11 +30,11 @@ Arguments lon and lat define the coordinates that must be in the same projection
 }
 \examples{
 
-
-# dataFromGrid(grid = "../data/tmax.nc",
- #                varname = 'tn',
- #                lon = c(41.39, 42),
- #                lat = c(2.17, 2.5),
- #                times = FALSE)
-
+\donttest{
+ dataFromGrid(grid = "../data/tmax.nc",
+                 varname = 'tn',
+                 lon = c(41.39, 42),
+                 lat = c(2.17, 2.5),
+                 times = FALSE)
+}
 }

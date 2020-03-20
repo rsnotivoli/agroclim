@@ -9,6 +9,7 @@
 #' @param max_abs same as min_abs but with maximum absolute temperature.
 #' @param plot_years numeric vector indicating the frequencies of individual years to plot over the averages.
 #' @param show_legend logical value indicating wether legend will be shown or not.
+#' @return If the output path is defined, a pdf file is created.
 #' @details The numer of individual years to plot over the average frequencies is unlimited. However, it is recommended to add only a few due to the difficult of reading a lot of information in the same plot.
 #'
 #' The colors of the individual years are random, so it is possible to get different colors for same years in two runs of same plot.

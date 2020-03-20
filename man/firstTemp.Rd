@@ -21,7 +21,7 @@ firstTemp(mx, dates, iniday = "01-01", endday = "09-01",
 \item{thres}{temperature threshold considered to trigger occurrence (+35 by default).}
 }
 \value{
-depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
+Depending on argument type, the output will be a numeric vector of julian days (type = "doy") or a vector of characters with dates (type = "date").
 }
 \description{
 Calculates the first day, within a predefined period, with a temperature over a threshold

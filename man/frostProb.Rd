@@ -22,6 +22,9 @@ frostProb(mn, dates, iniday = "07-01", endday = "06-30",
 
 \item{prob}{numeric. Threshold indicating the probability (0.10 by default)}
 }
+\value{
+A numeric vector with the annual number of frost probability is returned.
+}
 \description{
 Calculates the first day in the year where the probability if frost is under a threshold.
 }

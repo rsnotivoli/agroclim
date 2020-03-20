@@ -5,7 +5,7 @@
 #' @param dates vector of dates corresponding with daily temperature series
 #' @param type type of output. It can be "temp" for temperature or "month" for the number of the coldest month.
 #' @param ... any other argument. It is expected to be "na.rm" in case NA values are required to be removed.
-#' @return depending on argument type, the output will be a numeric value with the month (type = "month") or with temperature (type = "temp").
+#' @return Depending on argument type, the output will be a numeric value with the month (type = "month") or with temperature (type = "temp").
 #' @examples
 #'
 #'
